@@ -1,0 +1,35 @@
+
+String[] words = {" simplified", "geometric", "Expressionism", "Cubism", "neoplasticism", "depiction", "inner reality", "De Stijl", "abstract", "impressionism", "Piet Mondrian", "1930", "convey"};
+
+
+
+
+void setup() {
+frameRate(100);
+size (1000,1000);
+background (255);
+stroke(10);
+strokeWeight(20);
+rectMode(CENTER);
+fill(255,50,50);
+rect(750,250,900,900); //red square
+fill(50,50,255);
+rect(130,870,340,340); //blue square
+fill(255,255,0);
+rect(950,950,150,200); //yellow square
+fill(255,255,255);
+rect(950,780,150,150); //white square bottom right cornner
+fill(0,0,0);
+rect(150,300,300,30); //black rectangle top left
+fill(0,0,0);
+rect(950,850,150,15); //black rectangle bottom right
+}
+
+
+void draw() {
+if (keyPressed) {
+textSize(random(5,100));
+fill(0);
+byte index = (byte) random(words.length);
+text( words[index], random(width), random(height));
+} else {}}
